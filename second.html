@@ -1,92 +1,96 @@
-<<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Verzilin Seva 27/1</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"/>
+    <title>Вторая работа</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header" id="top">
-    <div id="headcont">
-      <div class="menu" style="float:rigth">
-        <span> INFO: </span>
-        <a href="#links"> LINKS </a><a href="#table"> TABLE </a><a href="#form"> FORM </a><a href="#footer"> FOOTER </a></div>
-        </div>
-      <img style="float:left; margin:10px; width:150px; height:150px;" src="image.png" alt="logo" />
-      <h3><div style="background-color:#ddd; padding:20px;">WEB</div></h3>
-    </div>
-  </header>
-<div class="body">
-<head>
-  <title>LINKS</title>
-</head>
-<links id="links"></table>
-<body>
-  <h1>ССЫЛКИ</h1>
-  <ol>
-    <li><a href="http://kubsu.ru/"title = Официальный сайт Кубанского государственного университета">1. Абсолютная гиперссылка на главную страницу сайта  kubsu.ru </a></li>
-    <li><a href="https://www.kubsu.ru/"title = Официальный сайт Кубанского государственного университета">2. Абсолютная гиперссылка на главную страницу сайта  kubsu.ru  в протоколе https </a></li>
-    <li><a href="http://www.kubsu.ru/"><img src="image.jpg" width="450" height="450"></a></li>
-    <li><a>3. Ссылка-изображение </a></li>
-    <li><a href="/secondpage.html">4. Сокращенная ссылка на внутреннюю страницу </a></li>
-    <li> <a href="index.html">5. Cокращенная ссылка на главную страницу </li>
-    <li><a href=" #КУБГУ">6. Фрагмент страницы </a></li>
-    <h1> КУБГУ <article id = "КУБГУ" ></article> Куба́нский госуда́рственный университе́т — высшее учебное заведение в Краснодаре. Является одним из крупнейших и старейших университетов юга России. </h1>
-    <li><a href="https://www.kubsu.ru/ru/science/achivments/">7. Ссылка на cайт КубГУ с тремя параметрами в URL </a></li>
-    <li><a href="https://www.kubsu.ru/?id=zone-user">8. Ссылка на сайт КубГУ с параметром ID в URL </a></li>
-    <li><a href="about/thirdpage.html">9. Относительная на страницу в каталоге about </a></li>
-    <li><a href="about/thirdpage.html">10. Относительная на страницу в каталоге выше текущего </a> </li>
-    <li><a href="about/easy/easy.html">11. Ссылка на страницу в каталоге двумя уровнями выше </a> </li>
-    <li><a href="about/thirdpage.html">12. Контекстная cсылка</a></li>
-    <li><a href="https://www.kubsu.ru/node/38706#superfish-1">14. Ссылка на фрагмент страницы стороннего сайта </a> </li>
-    <li><a href="https://www.kubsu.ru/ru/node/38706 "rel="nofollow">15. Ссылка, по которой запрещен переход поисковикам </a></li>
-    <li><a>16. Ссылка без href</a></li>
-    <li><a href=>17. Ссылка с пустым href</a></li>
-    <li><noindex><a href="https://www.kubsu.ru/ru/node">19. Ссылка, запрещенная для индексации поисковикам </a></noindex></li>
-    <li><a></a>20. Нумерованный список ссылок с подписями title </a></li>
-    <li><a href="https://www.kubsu.ru/"> Title №1 </a></li>
-    <li><a href="https://www.kubsu.ru/"> Title №2 </a></li>
-    <li><a href="https://www.kubsu.ru/"> Title №3 </a></li>
-    <li><a href="ftp://user:password@kubsu.ru/page.html">21. Cсылка на файл на сервере FTP с авторизацией </a></li>
-  </ol>
 
-<head>
-<title>Table</title>
-</head>
 <body>
-<table border="1" id="table">
-<h2>ТАБЛИЦА</h2>
-<tr>
-  <th>Колонка 1</th>
-  <th>Колонка 2</th>
-  <th>Колонка 3</th>
-  <th>Колонка 4</th>
-</tr>
-<tr>
-  <td colspan="2">Ячейка 11, объединённая с ячейкой 12</td>
-  <td colspan="2">Ячейка 13, объединённая с ячейкой 14</td>
-</tr>
-<tr>
-  <td colspan="4">Ячейка 21, объединённая с 22, 23 и 24</td>
-</tr>
-<tr>
-  <td>Ячейка 31</td>
-  <td>Ячейка 32</td>
-  <td colspan="2">Ячейки 33 и 34</td>
-</tr>
-<tr>
-  <td>Ячейка 41</td>
-  <td colspan="2">Ячейки 42 и 43</td>
-  <td>Ячейка 44</td>
-</tr>
-<tr>
-  <td>Сергей</td>
-  <td>Геннадьевич</td>
-  <td>Самый</td>
-  <td>Лучший</td>
-</tr>
-</table>
-</body>
+<header id="header">
+    <p>
+        <img src="image.png" alt="logo" id="logo">
+        Enjoy
+    </p>
+</header>
+<nav class="navigation">
+    <ul>
+        <li><a href="#links">Список гиперссылок</a></li>
+        <li><a href="#table">Таблица</a></li>
+        <li><a href="#form">Форма</a></li>
+    </ul>
+</nav>
+<main>
+    <div id="links">
+      <ol>
+            <li><a href="http://kubsu.ru/"title = Официальный сайт Кубанского государственного университета">1. Абсолютная гиперссылка на главную страницу сайта  kubsu.ru </a></li>
+            <li><a href="https://www.kubsu.ru/"title = Официальный сайт Кубанского государственного университета">2. Абсолютная гиперссылка на главную страницу сайта  kubsu.ru  в протоколе https </a></li>
+            <li><a href="http://www.kubsu.ru/"><img src="image.jpg" width="450" height="450">3. Ссылка-изображение</a></li>
+            <li><a href="/secondpage.html">4. Сокращенная ссылка на внутреннюю страницу </a></li>
+            <li> <a href="index.html">5. Cокращенная ссылка на главную страницу </li>
+            <li><a href=" #КУБГУ">6. Фрагмент страницы </a></li>
+            <h1> КУБГУ <article id = "КУБГУ" ></article> Куба́нский госуда́рственный университе́т — высшее учебное заведение в Краснодаре. Является одним из крупнейших и старейших университетов юга России. </h1>
+            <li><a href="https://www.kubsu.ru/ru/science/achivments/">7. Ссылка на cайт КубГУ с тремя параметрами в URL </a></li>
+            <li><a href="https://www.kubsu.ru/?id=zone-user">8. Ссылка на сайт КубГУ с параметром ID в URL </a></li>
+            <li><a href="about/thirdpage.html">9. Относительная на страницу в каталоге about </a></li>
+            <li><a href="about/thirdpage.html">10. Относительная на страницу в каталоге выше текущего </a> </li>
+            <li><a href="about/easy/easy.html">11. Ссылка на страницу в каталоге двумя уровнями выше </a> </li>
+            <li><a href="about/thirdpage.html">12. Контекстная cсылка</a></li>
+            <li><a href="https://www.kubsu.ru/node/38706#superfish-1">14. Ссылка на фрагмент страницы стороннего сайта </a> </li>
+            <li><a href="https://www.kubsu.ru/ru/node/38706 "rel="nofollow">15. Ссылка, по которой запрещен переход поисковикам </a></li>
+            <li><a>16. Ссылка без href</a></li>
+            <li><a href=>17. Ссылка с пустым href</a></li>
+            <li><noindex><a href="https://www.kubsu.ru/ru/node">19. Ссылка, запрещенная для индексации поисковикам </a></noindex></li>
+            <li><a></a>20. Нумерованный список ссылок с подписями title </a></li>
+            <li><a href="https://www.kubsu.ru/"> Title №1 </a></li>
+            <li><a href="https://www.kubsu.ru/"> Title №2 </a></li>
+            <li><a href="https://www.kubsu.ru/"> Title №3 </a></li>
+            <li><a href="ftp://user:password@kubsu.ru/page.html">21. Cсылка на файл на сервере FTP с авторизацией </a></li>
+
+        </ol>
+    </div>
+    <div id="table">
+        <h2>Таблица</h2>
+        <table>
+            <tbody>
+            <tr>
+                <th class="header_table" colspan="3">Заголовок таблицы</th>
+            </tr>
+            <tr>
+                <td>Ячейка 11</td>
+                <td>Ячейка 12</td>
+                <td>Ячейка 13</td>
+                <td>Ячейка 14</td>
+                <td>Ячейка 15</td>
+            </tr>
+            <tr class="even">
+                <td>Ячейка 21</td>
+                <td>Ячейка 22</td>
+                <td rowspan="2" class="union">Ячейка 23 + Ячейка 33</td>
+                <td>Ячейка 24</td>
+                <td>Ячейка 25</td>
+            </tr>
+            <tr>
+                <td>Ячейка 31</td>
+                <td>Ячейка 32</td>
+                <td>Ячейка 34</td>
+                <td>Ячейка 35</td>
+            </tr>
+            <tr class="even">
+                <td>Ячейка 41</td>
+                <td colspan="2" class="union">Ячейка 42 + Ячейка 43</td>
+                <td>Ячейка 44</td>
+                <td>Ячейка 45</td>
+            </tr>
+            <tr>
+                <td>Ячейка 51</td>
+                <td>Ячейка 52</td>
+                <td>Ячейка 53</td>
+                <td>Ячейка 54</td>
+                <td>Ячейка 55</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
 </ul>
 <p > Форма для заполнения: </p > 
