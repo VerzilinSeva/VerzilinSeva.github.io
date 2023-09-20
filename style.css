@@ -23,7 +23,7 @@ body
   }
   
   .name {
-    background-color: #ccc;
+    background-color: #ADD8E6;
     padding: 10px;
   }
   
@@ -50,7 +50,7 @@ body
   th {
       font-size: 20px;
       text-align: center;
-      background-color: #ADD8E6
+      background-color: #ADD8E6;
     }
   
   tr:nth-child(even) {
