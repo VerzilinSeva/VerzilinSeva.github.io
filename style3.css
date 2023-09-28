@@ -1,8 +1,8 @@
 body 
 {
   margin: 0;
-  background-color: beige;
-  font-size: 20px;
+  background-color: white;
+  font-size: 10px;
 }
 
 #main-aside-wrapper 
@@ -11,13 +11,13 @@ body
   flex-direction: column;
   flex-wrap: wrap;
   min-height: 100%;
-   margin: 10px;
-  padding: 10px;
+   margin: 20px;
+  padding: 20px;
  
 }
 #main-aside-wrapper main, #main-aside-wrapper aside 
 {
-  background-color: #ccc;
+  background-color: #ADD8E6;
 
 }
 #main-aside-wrapper aside 
@@ -66,7 +66,7 @@ body
 {
   flex: 1;
   order: 7;
-  background-color: #ccc;
+  background-color: #ADD8E6;
 
 }
 @media screen and (min-width: 1000px) 
@@ -118,7 +118,7 @@ body
 #main-aside-wrapper foot {
   flex: 1;
   order: 7;
-  background-color: #ccc;
+  background-color: #ADD8E6;
 
 }
 
@@ -160,7 +160,7 @@ header
   
 .name 
 {
-  background-color:bisque;
+  background-color: white;
   padding: 10px;
 }
   
@@ -193,21 +193,21 @@ th, td
 th 
 {
   font-size: 20px;
-  background-color:bisque;
+  background-color: white;
 }
   
 tr:nth-child(even) 
 {
   font-size: 20px;
   color: #000000;
-  background-color: beige;
+  background-color: white;
 }
   
 tr:nth-child(odd) 
 {
   font-size: 20px;
   color: #000000;
-  background-color: bisque;
+  background-color: white;
 }
 
 h1{
@@ -216,5 +216,5 @@ h1{
 h2,h3,h4
 {
   font-size: 30px;
-  background-color: bisque;
+  background-color: white;
 }
