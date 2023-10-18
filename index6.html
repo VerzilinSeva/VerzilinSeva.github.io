@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toy_Shop</title>
+    <script src="main.js"></script>
+</head>
+<body>
 
+<div>Toy price calculator</div>
+<div id="prodPrice">Select the product type</div>
+   Product Type:
+<form>
+    <select name="prodType">
+        <option value="1">Bear</option>
+        <option value="2">Rabbit</option>
+        <option value="3">Dog</option>
+    </select>
+    <div id="radios">
+        <label><input type="radio" name="prodOptions" value="var1">Black</label>
+        <label><input type="radio" name="prodOptions" value="var2">White</label>
+        <label><input type="radio" name="prodOptions" value="var3">Brown</label>
+    </div>
+    <div id="checkboxes">
+        <label><input type="checkbox" name="chb1">Big</label>
+        <label><input type="checkbox" name="chb2">Spare parts</label>
+    </div>
+    <p>Input toys numbers: </p>
+    <input
+            type="text"
+            id = "Toys_Count"
+            value=""
+            placeholder="Numbers of toys"
+    >
+</form>
+<div id="cost"></div>
+
+</body>
+</html>
