@@ -136,7 +136,7 @@ body
 
 header
 {
-  background-color:bisque;
+  background-color: white;
   padding: 15px;
   height: 110px;
   margin: 0;
@@ -175,7 +175,7 @@ header
   
 footer 
 {
-  background-color:bisque;
+  background-color:white;
   height: 25px;
   padding: 10px;
   text-align: left;
