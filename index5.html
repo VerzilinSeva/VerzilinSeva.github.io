@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Order_calculator</title>
+	<title>Калькулятор стоимости заказа</title>
+	<meta charset="UTF-8">
+  <script defer src="index.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<h1>Order cost calculator</h1>
-<form>
-    <p>Input quantity: </p>
-    <input
-            type="text"
-            id = "Count"
-            value=""
-            placeholder="Numbers of toys"
-    >
-    <br>
-    <p>Input toys price: </p>
-    <input
-            type="text"
-            id = "Toys_Price"
-            value=""
-            placeholder="Price of toys"
-    >
-    <br>
-    <br>
-    <button type="button" onclick="calculate();">Calculate price</button>
-    <br>
-    <br>
-    <div id = "cost"></div>
-    <script src="main.js"></script>
-</form>
+<div class="container">
+	<h2>Калькулятор стоимости заказа</h2>
+    <div class="form-group">
+        <label for="quantity">Количество товара :</label>
+        <input type="text" id="quantity" name="quantity">
+    </div>
+    <div class="form-group">
+        <label for="product">Товар :</label>
+        <select id="product" name="product">
+            <option value="25">Товар #1 - 25₽</option>
+            <option value="50">Товар #2 - 50₽</option>
+            <option value="100">Товар #3 - 100₽</option>
+        </select>
+    </div>
+    <button id="calculateButton">Подсчитать итоговую стоимость</button>
+	<div id="result"></div>
+</div>
 </body>
 </html>
