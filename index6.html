@@ -1,39 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Toy_Shop</title>
-    <script src="main6.js"></script>
+	<title>Калькулятор стоимости заказа</title>
+	<meta charset="UTF-8">
+  <script defer src="script6.js"></script>
+  <link rel="stylesheet" href="style6.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-<div>Toy price calculator</div>
-<div id="prodPrice">Select the product type</div>
-   Product Type:
-<form>
-    <select name="prodType">
-        <option value="1">Bear</option>
-        <option value="2">Rabbit</option>
-        <option value="3">Dog</option>
-    </select>
-    <div id="radios">
-        <label><input type="radio" name="prodOptions" value="var1">Black</label>
-        <label><input type="radio" name="prodOptions" value="var2">White</label>
-        <label><input type="radio" name="prodOptions" value="var3">Brown</label>
+<div class="container">
+	<h2>Калькулятор стоимости заказа</h2>
+    <div class="form-group">
+        <label for="quantity">Количество товара :</label>
+        <input type="text" id="quantity" name="quantity">
     </div>
-    <div id="checkboxes">
-        <label><input type="checkbox" name="chb1">Big</label>
-        <label><input type="checkbox" name="chb2">Spare parts</label>
+    <div class="form-group">
+        <label for="product">Товар :</label>
+        <select id="product" name="product">
+            <option value="25">Товар #1</option>
+            <option value="50">Товар #2</option>
+            <option value="100">Товар #3</option>
+        </select>
     </div>
-    <p>Input toys numbers: </p>
-    <input
-            type="text"
-            id = "Toys_Count"
-            value=""
-            placeholder="Numbers of toys"
-    >
+    <button id="calculateButton">Подсчитать итоговую стоимость</button>
+	<div id="result"></div>
+</div>
+<form class="form2">
+		<h2>Калькулятор стоимости услуги</h2>
+ 		<div class="quantity-group">
+ 			<label for="quantity2">Количество</label>
+ 			<input type="text" id="quantity2" name="quantity2" value="1">
+ 		</div>
+ 		<div class="product-group">
+ 			<label for="product2">Вид товара:</label>
+ 			<select id="product2" name="product2">
+ 				<option value="1">Товар #1</option>
+ 				<option value="2">Товар #2</option>
+ 				<option value="3">Товар #3</option>
+ 			</select>
+ 		</div>
+ 		<div class="opt-group">
+ 			<label for="opt1">Тип #1</label>
+ 			<input id="opt1" type="radio" name="productOptions" value="option1">
+ 			<label for="opt2">Тип #2</label>
+ 			<input id="opt2" type="radio" name="productOptions" value="option2">
+ 			<label for="opt3">Тип #3</label>
+ 			<input id="opt3" type="radio" name="productOptions" value="option3">
+ 		</div>
+ 		<div class="check-group">
+ 			<label for="check1">Качество #1</label>
+ 			<input id="check1" type="checkbox" class="productProperties" value="property1">
+ 			<label for="check2">Качество #2</label>
+ 			<input id="check2" type="checkbox" class="productProperties" value="property2">
+ 		</div>
+ 		<div id="result2"></div>
 </form>
-<div id="cost"></div>
+</body>
+</html>
 
 </body>
 </html>
